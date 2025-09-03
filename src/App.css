@@ -1,38 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f6fa;
+  color: #333;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  height: 80px;
+  width: 110px;
+  margin-bottom: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+  background-color: #fff;
+  color: #3182ce;
+  padding: 1rem 0;
+  box-shadow: 0 2px 8px #eee;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+main {
+  max-width: 480px;
+  margin: 24px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px #ddd;
+}
+
+.task-form {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 18px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.task-form input,
+.task-form button {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #38b2ac;
+  border-radius: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.task-form button {
+  background: #3182ce;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.task-form button:hover {
+  background: #2057a6;
+}
+
+.task-list, .completed-task-list {
+  margin-top: 18px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+
+th, td {
+  padding: 10px 6px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background: #efefef;
+  color: #2057a6;
+  font-weight: 600;
+}
+
+.mark-done {
+  background: #38b2ac;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.mark-done:hover {
+  background: #2c7a7b;
+}
+
+
+@media (max-width: 600px) {
+  main {
+    max-width: 98%;
+    padding: 8px;
   }
-  to {
-    transform: rotate(360deg);
+  .logo {
+    height: 56px;
+  }
+  th, td {
+    font-size: 0.9rem;
+    padding: 8px 3px;
+  }
+  .task-form {
+    flex-direction: column;
+    gap: 8px;
   }
 }
