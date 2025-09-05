@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Preventive-Maintenance-scheduler/static/css/main.495d7d40.css",
+    "main.js": "/Preventive-Maintenance-scheduler/static/js/main.f4eb39fe.js",
+    "static/js/453.9ea6c3f6.chunk.js": "/Preventive-Maintenance-scheduler/static/js/453.9ea6c3f6.chunk.js",
+    "index.html": "/Preventive-Maintenance-scheduler/index.html",
+    "main.495d7d40.css.map": "/Preventive-Maintenance-scheduler/static/css/main.495d7d40.css.map",
+    "main.f4eb39fe.js.map": "/Preventive-Maintenance-scheduler/static/js/main.f4eb39fe.js.map",
+    "453.9ea6c3f6.chunk.js.map": "/Preventive-Maintenance-scheduler/static/js/453.9ea6c3f6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.495d7d40.css",
+    "static/js/main.f4eb39fe.js"
+  ]
+}
